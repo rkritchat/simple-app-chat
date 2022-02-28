@@ -7,7 +7,7 @@ Simple app chat with grpc and golang, this project is just for learning about ho
 2.Start client by go run /client/client.go and enter username / target chat name(onother client name)
 ![Screen Shot 2565-03-01 at 00 38 12](https://user-images.githubusercontent.com/25640366/156031383-9f292d33-9485-4cf4-b95b-55da7030ba3b.png)
 
-3.Start another client with new terminal and execute go run /client/client.go and enter username / target chat name (from 2)
+3.Start another client with new terminal and execute go run /client/client.go and enter username / target chat name
 ![Screen Shot 2565-03-01 at 00 38 57](https://user-images.githubusercontent.com/25640366/156031466-6113bcba-1102-48d1-b0ca-14f8b7ecd03c.png)
 
 4.Enter message, and enjoy chating...
