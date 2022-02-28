@@ -1,5 +1,5 @@
 # simple-app-chat
-Simple app chat with grpc and golang, this project is just for learning about how grpc work!!\
+Simple app chat with grpc and golang, this project is just for learning about how grpc work!!
 
 1.Start server by ```go run /server/server.go```\
 ![Screen Shot 2565-03-01 at 00 36 52](https://user-images.githubusercontent.com/25640366/156031178-4f246b49-c13f-4e07-9aa9-e22087ab137c.png)
