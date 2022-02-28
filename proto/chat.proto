@@ -1,0 +1,51 @@
+syntax = "proto3";
+package chat;
+option go_package="/proto";
+
+message Message{
+    string from = 1;
+    string to = 2;
+    string message = 3;
+    bool isFromServer =4;
+    bool ok = 5;
+    string id=6;
+}
+
+//Chat
+message ChatRequest {
+    Message message = 1;
+}
+message ChatResponse {
+    Message message = 1;
+}
+
+//Login
+message LoginRequest {
+    string name = 1;
+}
+message LoginResponse{
+    Message message = 1;
+}
+
+//Logout
+message LogoutRequest{
+    string id = 1;
+}
+message LogoutResponse{
+    bool ok = 1;
+}
+
+//List all 
+message ListAllRequest{
+    string adminId = 1;
+}
+message ListAllResponse{
+    string adminId = 1;
+}
+service ChatService{
+    rpc Login(stream LoginRequest) returns(stream LoginResponse) {};
+    rpc Logout(LogoutRequest) returns(LogoutResponse) {};
+    rpc Chat(ChatRequest) returns (ChatResponse) {};
+    rpc ListAll(ListAllRequest) returns (ListAllResponse){};
+}
+
